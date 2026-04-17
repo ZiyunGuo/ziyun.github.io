@@ -5,16 +5,9 @@
 # degree: 学历 / 职位
 # research: 研究方向
 
-- name: "友人 A"
+- name: "Shaohan Wang"
   avatar: ""
-  url: "https://example.com"
-  school: "某某大学"
-  degree: "PhD Student"
-  research: "Software Engineering"
-
-- name: "友人 B"
-  avatar: ""
-  url: "https://example.com"
-  school: "某某大学"
-  degree: "Master's Student"
-  research: "Cybersecurity"
+  url: "https://shaohanw.github.io/"
+  school: "University of Michigan"
+  degree: "Master of Engineering "
+  research: "Electrical & Computer Engineering"

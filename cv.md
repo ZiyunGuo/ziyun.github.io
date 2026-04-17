@@ -13,19 +13,25 @@ permalink: /cv/
 <div class="timeline">
 
   <div class="timeline-entry animate-fade-in">
-    <div class="timeline-date">Aug 2024 – Present</div>
+    <div class="timeline-date">
+    Aug 2024 – Present</div>
     <div class="timeline-title">Nanyang Technological University (NTU)</div>
     <div class="timeline-sub">Master of Science in Cyber Security</div>
   </div>
 
   <div class="timeline-entry animate-fade-in">
-    <div class="timeline-date">Sep 2020 – Jun 2024</div>
+    <div class="timeline-date">
+      <span class="lang-zh">2020.9 – 2024.6</span>
+      <span class="lang-en">Sep 2020 – Jun 2024</span>
+    </div>
     <div class="timeline-title">
-      <span class="lang-zh">本科</span>
+      <span class="lang-zh">四川大学</span>
       <span class="lang-en">Sichuan University</span>
     </div>
-    <div class="timeline-sub">Bachelor of Engineering in Cyber Security</div>
-  </div>
+    </div class="timeline-sub">>
+      <span class="lang-zh">网络空间安全学士</span>
+      <span class="lang-en">Bachelor of Engineering in Cyber Security</span>
+    </div>
 
 </div>
 </section>

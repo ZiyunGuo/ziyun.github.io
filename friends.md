@@ -21,8 +21,8 @@ permalink: /friends/
     </div>
     <div class="friend-info">
       <span class="friend-name">{{ friend.name }}</span>
-      <span class="friend-desc">{{ friend.school }} · {{ friend.degree }}</span>
-      <span class="friend-desc" style="margin-top:0.1rem;">🔬 {{ friend.research }}</span>
+      {% if friend.school or friend.degree %}<span class="friend-desc">{{ friend.school }}{% if friend.school and friend.degree %} · {% endif %}{{ friend.degree }}</span>{% endif %}
+      {% if friend.research %}<span class="friend-desc" style="margin-top:0.1rem;">🔬 {{ friend.research }}</span>{% endif %}
     </div>
     <span class="friend-icon" aria-hidden="true">✦</span>
   </a>

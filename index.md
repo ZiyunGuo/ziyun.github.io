@@ -8,11 +8,11 @@ permalink: /
 <section class="hero animate-fade-in">
   <p class="hero-greeting">Ziyun Guo</p>
   <p class="hero-sub">Research Engineer · Singapore Management University</p>
-  <p class="hero-sub" style="font-size:0.9rem; margin-top:-0.5rem;">📍 Singapore</p>
-  <div class="hero-actions" style="margin-top:1.25rem;">
-    <a href="mailto:zyguo@smu.edu.sg" class="btn btn-outline">📧 zyguo@smu.edu.sg</a>
-    <a href="https://github.com/ZiyunGuo-Sec" class="btn btn-outline" target="_blank" rel="noopener">🐙 GitHub</a>
-  </div>
+  <p class="hero-meta">
+    📍 Singapore &nbsp;·&nbsp;
+    <a href="mailto:zyguo@smu.edu.sg">zyguo@smu.edu.sg</a> &nbsp;·&nbsp;
+    <a href="https://github.com/ZiyunGuo-Sec" target="_blank" rel="noopener">GitHub</a>
+  </p>
 </section>
 
 <!-- About -->

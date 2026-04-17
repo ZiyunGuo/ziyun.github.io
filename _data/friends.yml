@@ -1,0 +1,20 @@
+# 友链数据
+# avatar: 头像图片 URL（留空则显示姓名首字母）
+# url: 个人主页链接
+# school: 学校 / 机构
+# degree: 学历 / 职位
+# research: 研究方向
+
+- name: "友人 A"
+  avatar: ""
+  url: "https://example.com"
+  school: "某某大学"
+  degree: "PhD Student"
+  research: "Software Engineering"
+
+- name: "友人 B"
+  avatar: ""
+  url: "https://example.com"
+  school: "某某大学"
+  degree: "Master's Student"
+  research: "Cybersecurity"

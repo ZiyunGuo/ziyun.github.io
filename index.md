@@ -6,29 +6,20 @@ permalink: /
 
 <!-- Hero -->
 <section class="hero animate-fade-in">
-  <p class="hero-greeting">Hi, I'm Ziyun ✨</p>
-  <p class="hero-sub">Security Researcher · Lifelong Learner</p>
-  <div class="hero-actions">
-    <a href="/blog/" class="btn btn-primary">✍️ Read Blog</a>
-    <a href="mailto:zyguo@smu.edu.sg" class="btn btn-outline">📧 Email</a>
+  <p class="hero-greeting">Ziyun Guo</p>
+  <p class="hero-sub">Research Engineer · Singapore Management University</p>
+  <p class="hero-sub" style="font-size:0.9rem; margin-top:-0.5rem;">📍 Singapore</p>
+  <div class="hero-actions" style="margin-top:1.25rem;">
+    <a href="mailto:zyguo@smu.edu.sg" class="btn btn-outline">📧 zyguo@smu.edu.sg</a>
     <a href="https://github.com/ZiyunGuo-Sec" class="btn btn-outline" target="_blank" rel="noopener">🐙 GitHub</a>
   </div>
 </section>
 
 <!-- About -->
 <section id="about" class="sp-section animate-fade-in">
-  <h2 class="section-title">About</h2>
+  <h2 class="section-title">About Me</h2>
   <div class="card">
-    <div class="profile-card" style="margin-bottom:0;">
-      <div class="profile-avatar">🌸</div>
-      <div class="profile-info">
-        <h3 style="font-size:1.2rem; margin-bottom:0.25rem;">Ziyun Guo</h3>
-        <p class="profile-tagline">Research Engineer, Singapore Management University (SMU)</p>
-      </div>
-    </div>
-    <hr style="margin:1.25rem 0; border-color:#f0d6eb;" />
-    <p>I am a Research Engineer in Computer Science at Singapore Management University (SMU). Prior to that, I received my Master's degree in Cyber Security from Nanyang Technological University (NTU), Singapore. My research interests lie at the intersection of <strong>software security and intelligent testing</strong>, covering GUI testing automation and cybersecurity.</p>
-    <p>🌍 Current interests: GUI Testing · Penetration Testing · Static Analysis · Fuzzing (in progress 🌱)</p>
+    <p>I am a Research Engineer in Computer Science at Singapore Management University (SMU). I received my Master's degree in Cyber Security from Nanyang Technological University (NTU), Singapore. My research focuses on <strong>software security and intelligent testing</strong>, with work spanning GUI testing automation, penetration testing, and LLM-powered security analysis.</p>
   </div>
 </section>
 

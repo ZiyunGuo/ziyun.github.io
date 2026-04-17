@@ -1,0 +1,54 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}">
+      <span class="brand-icon">🌸</span>
+      <span class="brand-text">
+        <span class="brand-main">Ziyun's Blog</span>
+        <span class="brand-sub">子云の小窝</span>
+      </span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">
+        <span class="nav-icon">🏠</span>
+        <span class="lang-zh">首页</span><span class="lang-en">Home</span>
+      </a>
+      <a href="{{ '/about/' | relative_url }}" class="nav-link{% if page.url contains '/about' %} active{% endif %}">
+        <span class="nav-icon">💜</span>
+        <span class="lang-zh">关于我</span><span class="lang-en">About</span>
+      </a>
+      <a href="{{ '/cv/' | relative_url }}" class="nav-link{% if page.url contains '/cv' %} active{% endif %}">
+        <span class="nav-icon">📄</span>
+        <span class="lang-zh">简历</span><span class="lang-en">CV</span>
+      </a>
+      <a href="{{ '/blog/' | relative_url }}" class="nav-link{% if page.url contains '/blog' %} active{% endif %}">
+        <span class="nav-icon">✍️</span>
+        <span class="lang-zh">博客</span><span class="lang-en">Blog</span>
+      </a>
+      <a href="{{ '/friends/' | relative_url }}" class="nav-link{% if page.url contains '/friends' %} active{% endif %}">
+        <span class="nav-icon">🔗</span>
+        <span class="lang-zh">友链</span><span class="lang-en">Friends</span>
+      </a>
+      <button class="lang-toggle" onclick="toggleLang()" aria-label="切换语言">EN / 中</button>
+    </nav>
+  </div>
+</header>
+
+<script>
+  (function() {
+    var saved = localStorage.getItem('lang') || 'zh';
+    document.documentElement.setAttribute('lang', saved);
+  })();
+
+  function toggleLang() {
+    var current = document.documentElement.getAttribute('lang') || 'zh';
+    var next = current === 'zh' ? 'en' : 'zh';
+    document.documentElement.setAttribute('lang', next);
+    localStorage.setItem('lang', next);
+  }
+</script>

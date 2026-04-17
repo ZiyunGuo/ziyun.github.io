@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="sparkle-bg" aria-hidden="true">
+    <span class="sparkle s1">✦</span>
+    <span class="sparkle s2">✧</span>
+    <span class="sparkle s3">⋆</span>
+    <span class="sparkle s4">✦</span>
+    <span class="sparkle s5">✧</span>
+    <span class="sparkle s6">⋆</span>
+  </div>
+
+  {% include header.html %}
+
+  <main class="site-main">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

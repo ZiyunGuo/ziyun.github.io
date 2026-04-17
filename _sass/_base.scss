@@ -1,0 +1,76 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  background: $color-bg;
+  color: $color-text;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img { max-width: 100%; display: block; }
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover { color: $color-accent-2; }
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-body;
+  font-weight: 700;
+  line-height: 1.3;
+  color: $color-text;
+}
+
+p { margin-bottom: 1rem; }
+
+code, pre {
+  font-family: $font-mono;
+  font-size: 0.88em;
+}
+
+pre {
+  background: $color-code-bg;
+  color: #f8d7f0;
+  border-radius: $radius-md;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+code:not(pre code) {
+  background: rgba($color-accent, 0.1);
+  color: $color-accent;
+  padding: 0.1em 0.4em;
+  border-radius: $radius-sm;
+}
+
+blockquote {
+  border-left: 3px solid $color-accent;
+  padding-left: 1rem;
+  color: $color-muted;
+  margin: 1.5rem 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $color-border;
+  margin: 2rem 0;
+}
+
+ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.25rem; }
+
+// Language toggle
+html[lang="zh"] .lang-en { display: none !important; }
+html[lang="en"] .lang-zh { display: none !important; }
+html:not([lang]) .lang-en { display: none !important; }

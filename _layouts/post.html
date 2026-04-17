@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="post-full animate-fade-in">
+  <header class="post-header">
+    <div class="post-meta-top">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%Y年%m月%d日" }}
+      </time>
+      &nbsp;·&nbsp;
+      <span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+    </p>
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a href="{{ '/blog/' | relative_url }}" class="btn-back">
+      <span class="lang-zh">← 返回博客</span>
+      <span class="lang-en">← Back to Blog</span>
+    </a>
+  </footer>
+</article>

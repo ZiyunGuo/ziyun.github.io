@@ -1,11 +1,44 @@
-title: My Blog
-email: 
-description: My personal blog
-baseurl: 
+title: "Ziyun's Blog · 子云の小窝"
+author:
+  name: "Ziyun Guo"
+  github: "ZiyunGuo-Sec"
+description: >-
+  Ziyun's personal blog — security research, learning notes, and life.
+  二次元风格的个人主页与技术博客。
+baseurl: ""
 url: "https://ziyunguo-sec.github.io"
-theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "/blog/page:num/"
+
 markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - styles.css

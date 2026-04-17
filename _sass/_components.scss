@@ -1,0 +1,339 @@
+// ── Card ────────────────────────────────────────────────
+.card {
+  position: relative;
+  background: $gradient-card;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 1.75rem 2rem;
+  box-shadow: $shadow-card;
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    box-shadow: $shadow-hover;
+    transform: translateY(-3px);
+  }
+
+  &::after {
+    content: '✦';
+    position: absolute;
+    top: 0.85rem;
+    right: 1.1rem;
+    color: $color-accent;
+    opacity: 0.35;
+    font-size: 0.7rem;
+    animation: sparkle 3.5s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+// ── Tags / Badges ────────────────────────────────────────
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15em 0.7em;
+  background: rgba($color-accent-2, 0.12);
+  color: $color-accent-2;
+  border: 1px solid rgba($color-accent-2, 0.25);
+  border-radius: $radius-pill;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.tag-pink {
+  background: rgba($color-accent, 0.1);
+  color: $color-accent;
+  border-color: rgba($color-accent, 0.2);
+}
+
+.tag-blue {
+  background: rgba($color-accent-3, 0.12);
+  color: darken($color-accent-3, 25%);
+  border-color: rgba($color-accent-3, 0.3);
+}
+
+// ── Buttons ──────────────────────────────────────────────
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: $radius-pill;
+  font-family: $font-body;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary {
+  background: $color-accent;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba($color-accent, 0.35);
+  &:hover { background: darken($color-accent, 6%); color: #fff; transform: translateY(-1px); box-shadow: 0 4px 18px rgba($color-accent, 0.45); }
+}
+
+.btn-outline {
+  background: transparent;
+  color: $color-accent-2;
+  border: 1.5px solid $color-accent-2;
+  &:hover { background: rgba($color-accent-2, 0.08); color: $color-accent-2; transform: translateY(-1px); }
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.88rem;
+  color: $color-muted;
+  text-decoration: none;
+  &:hover { color: $color-accent; }
+}
+
+// ── Timeline (CV) ────────────────────────────────────────
+.timeline {
+  border-left: 2px solid $color-border;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.18rem;
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $color-accent;
+    border: 2px solid $color-bg;
+    box-shadow: 0 0 0 2px $color-accent;
+  }
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: $color-muted;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.timeline-sub {
+  font-size: 0.88rem;
+  color: $color-muted;
+  margin-bottom: 0.5rem;
+}
+
+// ── Post cards (blog list) ───────────────────────────────
+.post-card {
+  background: $gradient-card;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 1.4rem 1.75rem;
+  margin-bottom: 1.25rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover { box-shadow: $shadow-hover; transform: translateY(-2px); }
+}
+
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: $color-muted;
+}
+
+.post-card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  a { color: $color-text; &:hover { color: $color-accent; } }
+}
+
+.post-card-excerpt { font-size: 0.9rem; color: $color-muted; margin-bottom: 0.75rem; }
+
+.read-more {
+  font-size: 0.82rem;
+  color: $color-accent-2;
+  font-weight: 600;
+  &:hover { color: $color-accent; }
+}
+
+// ── Friends grid ─────────────────────────────────────────
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: $gradient-card;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  text-decoration: none;
+  transition: all 0.25s;
+  position: relative;
+
+  &:hover {
+    box-shadow: $shadow-hover;
+    transform: translateY(-3px);
+    border-color: $color-accent;
+  }
+}
+
+.friend-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: $gradient-header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+
+.friend-avatar-placeholder {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $color-accent;
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.friend-name {
+  font-weight: 600;
+  color: $color-text;
+  font-size: 0.95rem;
+}
+
+.friend-desc {
+  font-size: 0.78rem;
+  color: $color-muted;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.friend-icon {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.9rem;
+  font-size: 0.65rem;
+  color: $color-accent;
+  opacity: 0.4;
+}
+
+// ── Skills grid ──────────────────────────────────────────
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-group h3 {
+  font-size: 0.88rem;
+  color: $color-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+// ── Page title section ───────────────────────────────────
+.page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.page-title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  background: linear-gradient(135deg, $color-accent, $color-accent-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle { color: $color-muted; font-size: 0.95rem; }
+
+// ── Section divider ──────────────────────────────────────
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $color-text;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::before { content: '✦'; color: $color-accent; font-size: 0.7em; }
+}
+
+// ── Pagination ───────────────────────────────────────────
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: 0.88rem;
+  color: $color-muted;
+}
+
+.btn-page {
+  padding: 0.35rem 1rem;
+  border-radius: $radius-pill;
+  border: 1px solid $color-border;
+  color: $color-muted;
+  transition: all 0.2s;
+  &:hover { border-color: $color-accent; color: $color-accent; }
+}
+
+// ── Full post ────────────────────────────────────────────
+.post-full { max-width: 720px; margin-inline: auto; }
+
+.post-header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid $color-border; }
+
+.post-title { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0.75rem 0 0.5rem; }
+
+.post-meta { font-size: 0.85rem; color: $color-muted; }
+
+.post-meta-top { display: flex; justify-content: center; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+
+.post-body {
+  h2 { font-size: 1.3rem; margin: 2rem 0 0.75rem; padding-bottom: 0.3rem; border-bottom: 1px solid $color-border; }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; color: $color-accent-2; }
+  p  { margin-bottom: 1.1rem; }
+  img { border-radius: $radius-md; margin: 1.5rem auto; box-shadow: $shadow-card; }
+}
+
+.post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid $color-border; }

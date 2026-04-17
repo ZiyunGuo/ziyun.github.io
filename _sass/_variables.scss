@@ -1,0 +1,32 @@
+// ── Color Palette ───────────────────────────────────────
+$color-bg:           #fdf6fb;
+$color-surface:      #ffffff;
+$color-surface-alt:  #fef0f8;
+$color-border:       #f0d6eb;
+$color-text:         #3d2b4f;
+$color-muted:        #9b7ab5;
+$color-accent:       #e87abf;
+$color-accent-2:     #a78bfa;
+$color-accent-3:     #7dd3fc;
+$color-star:         #fbbf24;
+$color-code-bg:      #2d1b3d;
+
+// ── Gradients ───────────────────────────────────────────
+$gradient-header: linear-gradient(135deg, #fce4f5 0%, #ede9fe 50%, #dbeafe 100%);
+$gradient-card:   linear-gradient(145deg, #fff8fd, #f8f4ff);
+$gradient-hero:   linear-gradient(160deg, #fdf2f8 0%, #ede9fe 60%, #e0f2fe 100%);
+
+// ── Typography ──────────────────────────────────────────
+$font-body:    'M PLUS Rounded 1c', 'Noto Sans SC', -apple-system, sans-serif;
+$font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+// ── Spacing / Shape ─────────────────────────────────────
+$radius-sm:   8px;
+$radius-md:   16px;
+$radius-lg:   24px;
+$radius-pill: 999px;
+
+// ── Shadows ─────────────────────────────────────────────
+$shadow-soft:  0 4px 20px rgba(168, 100, 180, 0.10);
+$shadow-card:  0 2px 12px rgba(168, 100, 180, 0.08);
+$shadow-hover: 0 8px 32px rgba(168, 100, 180, 0.18);

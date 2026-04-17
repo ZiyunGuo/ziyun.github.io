@@ -6,12 +6,12 @@ permalink: /
 
 <section class="hero animate-fade-in">
   <p class="hero-greeting">
-    <span class="lang-zh">你好，我是子云 ✨</span>
+    <span class="lang-zh">你好，我是紫云 ✨</span>
     <span class="lang-en">Hi, I'm Ziyun ✨</span>
   </p>
   <p class="hero-sub">
-    <span class="lang-zh">安全研究者 · 二次元爱好者 · 终身学习者</span>
-    <span class="lang-en">Security Researcher · Anime Fan · Lifelong Learner</span>
+    <span class="lang-zh">安全研究者 · 终身学习者</span>
+    <span class="lang-en">Security Researcher · Lifelong Learner</span>
   </p>
   <div class="hero-actions">
     <a href="/blog/" class="btn btn-primary">

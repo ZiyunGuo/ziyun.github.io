@@ -1,10 +1,9 @@
-title: "Ziyun's Blog · 紫云の小窝"
+title: "Ziyun's Blog "
 author:
   name: "Ziyun Guo"
   github: "ZiyunGuo-Sec"
 description: >-
   Ziyun's personal blog — security research, learning notes, and life.
-  二次元风格的个人主页与技术博客。
 baseurl: ""
 url: "https://ziyunguo-sec.github.io"
 

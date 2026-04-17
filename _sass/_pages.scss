@@ -19,6 +19,17 @@
   &::after  { bottom: 1rem; right: 1.5rem; font-size: 1rem; animation-delay: 1.5s; }
 }
 
+.hero-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba($color-accent, 0.4);
+  box-shadow: 0 0 0 5px rgba($color-accent, 0.1);
+  margin: 0 auto 1rem;
+  display: block;
+}
+
 .hero-greeting {
   font-size: clamp(1.8rem, 5vw, 2.8rem);
   font-weight: 700;

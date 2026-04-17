@@ -6,6 +6,7 @@ permalink: /
 
 <!-- Hero -->
 <section class="hero animate-fade-in">
+  <img src="/assets/images/avatar.png" alt="Ziyun Guo" class="hero-avatar" />
   <p class="hero-greeting">Ziyun Guo</p>
   <p class="hero-sub">Research Engineer · Singapore Management University</p>
   <p class="hero-meta">

@@ -379,8 +379,9 @@ permalink: /
       </div>
       <div class="friend-info">
         <span class="friend-name">{{ friend.name }}</span>
-        {% if friend.school or friend.degree %}<span class="friend-desc">{{ friend.school }}{% if friend.school and friend.degree %} · {% endif %}{{ friend.degree }}</span>{% endif %}
-        {% if friend.research %}<span class="friend-desc">🔬 {{ friend.research }}</span>{% endif %}
+        {% if friend.school %}<span class="friend-desc">{{ friend.school }}</span>{% endif %}
+        {% if friend.degree %}<span class="friend-desc">{{ friend.degree }}</span>{% endif %}
+        {% if friend.research %}<span class="friend-desc">{{ friend.research }}</span>{% endif %}
       </div>
       <span class="friend-icon" aria-hidden="true">✦</span>
     </a>
